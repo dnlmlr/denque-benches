@@ -1,0 +1,6 @@
+[submodule "denque"]
+	path = denque
+	url = https://github.com/invertase/denque.git
+[submodule "denque-dnlmlr"]
+	path = denque-dnlmlr
+	url = https://github.com/dnlmlr/denque.git

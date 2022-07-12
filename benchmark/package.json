@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "benchmark": "^2.1.4",
+    "double-ended-queue": "^2.1.0-0"
+  }
+}
