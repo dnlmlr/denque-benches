@@ -13,6 +13,7 @@ const array = []
 let l = 100000;
 while (--l) {
   denque.push(l);
+  denqueMod.push(l);
   array.push(l);
 }
 

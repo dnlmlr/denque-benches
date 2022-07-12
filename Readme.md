@@ -55,9 +55,9 @@ denque.remove (mod) x 2,449 ops/sec ±27.02% (6 runs sampled)
 native array splice - Fails to complete: "JavaScript heap out of memory"
 
 Running removeOne.js
-denque.removeOne x 1,148,268 ops/sec ±0.16% (88 runs sampled)
-denque.removeOne (mod) x 6,336,098 ops/sec ±0.59% (87 runs sampled)
-native array splice x 4,345 ops/sec ±0.59% (94 runs sampled)
+denque.removeOne x 1,170,924 ops/sec ±0.27% (96 runs sampled)
+denque.removeOne (mod) x 1,167,770 ops/sec ±0.37% (95 runs sampled)
+native array splice x 4,173 ops/sec ±1.39% (93 runs sampled)
 
 Running splice.js
 denque.splice x 827,636 ops/sec ±20.30% (77 runs sampled)
