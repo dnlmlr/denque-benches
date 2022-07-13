@@ -1,16 +1,16 @@
 'use strict';
 
-const Benchmark = require('benchmark');
-const suite = new Benchmark.Suite();
+var Benchmark = require('benchmark');
+var suite = new Benchmark.Suite();
 
-const Denque = require('../../denque');
-const DenqueMod = require('../../denque-dnlmlr');
+var Denque = require('../../denque');
+var DenqueMod = require('../../denque-dnlmlr');
 
-const denque = new Denque();
-const denqueMod = new DenqueMod();
-const array = []
+var denque = new Denque();
+var denqueMod = new DenqueMod();
+var array = []
 
-let l = 100000;
+var l = 100000;
 while (--l) {
   denque.push(l);
   denqueMod.push(l);

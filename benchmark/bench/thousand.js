@@ -1,17 +1,17 @@
 'use strict';
 
-const Benchmark = require('benchmark');
-const suite = new Benchmark.Suite();
+var Benchmark = require('benchmark');
+var suite = new Benchmark.Suite();
 
-const Denque = require('../../denque');
-const DenqueMod = require('../../denque-dnlmlr');
-const DoubleEndedQueue = require('double-ended-queue');
+var Denque = require('../../denque');
+var DenqueMod = require('../../denque-dnlmlr');
+var DoubleEndedQueue = require('double-ended-queue');
 
-const denque = new Denque();
-const denqueMod = new DenqueMod();
-const doubleEndedQueue = new DoubleEndedQueue();
+var denque = new Denque();
+var denqueMod = new DenqueMod();
+var doubleEndedQueue = new DoubleEndedQueue();
 
-let l = 1_000;
+var l = 1000;
 
 while (--l) {
   denque.push(l);
@@ -21,27 +21,27 @@ while (--l) {
 
 suite
   .add('denque', function () {
-    const a = denque.shift();
-    const b = denque.shift();
-    const c = denque.shift();
+    var a = denque.shift();
+    var b = denque.shift();
+    var c = denque.shift();
 
     denque.push(a);
     denque.push(b);
     denque.push(c);
   })
   .add('denque (mod)', function () {
-    const a = denqueMod.shift();
-    const b = denqueMod.shift();
-    const c = denqueMod.shift();
+    var a = denqueMod.shift();
+    var b = denqueMod.shift();
+    var c = denqueMod.shift();
 
     denqueMod.push(a);
     denqueMod.push(b);
     denqueMod.push(c);
   })
   .add('double-ended-queue', function () {
-    const a = doubleEndedQueue.shift();
-    const b = doubleEndedQueue.shift();
-    const c = doubleEndedQueue.shift();
+    var a = doubleEndedQueue.shift();
+    var b = doubleEndedQueue.shift();
+    var c = doubleEndedQueue.shift();
 
     doubleEndedQueue.push(a);
     doubleEndedQueue.push(b);
